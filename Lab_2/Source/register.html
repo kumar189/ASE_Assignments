@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script>
+function validateForm(){
+var x=document.forms["nForm"]["firstname"].value
+var y=document.forms["nForm"]["lastname"].value
+var z=document.forms["nForm"]["email"].value
+var a=document.forms["nForm"]["pno"].value
+
+var atplace=z.indexOf("@");
+var dotplace=z.lastIndexOf(".");
+if (atplace<1||dotplace<atplace+2||dotplace+2>=z.length){
+alert("NOT A VALID FORMAT")
+return false;
+}
+}
+</script>
+
+
+<meta charset="ISO-8859-1">
+<title>register</title>
+<style type="text/css">
+body {
+    background-color: #092756;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+	height: 150px;
+ 	 width: 250px;
+  	border: 1px dashed #ccc;
+  	padding: 1em;
+}
+
+
+    tab { padding-left: 2em; }
+    
+    .test{
+    height:30px;
+    width:100px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+<h1>create your account</h1>
+<form name="nForm" method="post">
+<h1><input type="text" name="firstname" placeholder="first name" style="width: 300px; height: 30px;" required><br>
+<input type="text" name="lastname"  placeholder="last name" style="width: 300px; height: 30px;" required><br>
+<input type="text" name="email" placeholder="email id" style="width: 300px; height: 30px;" required><br>
+<input type="text" id="phonenum" name="pno" placeholder="phone number" style="width: 300px; height: 30px;" required><br>
+<br><button class="test"><a href="file:///C:/Users/Asus/Desktop/New%20folder/register_success.html">register</a></button></h1>
+</form>
+</body>
+</html>
