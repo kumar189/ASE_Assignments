@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body><h2>
+Enter name to get google search results:</h2>
+<input type="text" id="query" value="" style="width: 200px;height: 30px;border-radius: 5px" placeholder="Enter word">
+<input type="button" id="submit" value="Search" style="width: 80px;height: 30px;border-radius: 5px" /><br><br>
+<h2><i>Result shown here</i></h2>
+
+<script>
+
+    $("#submit").click(function () {
+
+
+        var service_url = 'https://kgsearch.googleapis.com/v1/entities:search';
+        var params = {
+            'query': $("#query").val(),
+            'limit': 10,
+            'indent': true,
+            'key': 'AIzaSyBlSX2-4XIiKzELLXYIu7TMGf4t7CgUFqU',
+        };
+        $.getJSON(service_url + '?callback=?', params, function (response) {
+            $.each(response.itemListElement, function (i, element) {
+                $('<div>', {text: element['result']['name']}).appendTo(document.body);
+            });
+        });
+    });
+</script>
+</body>
+</html>
