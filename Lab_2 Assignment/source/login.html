@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script>
+function validateForm(){
+
+var name = document.getElementById('uname').value;
+var value = document.getElementById('pwd').value;
+localStorage.setItem('username', name);
+localStorage.setItem('password', value);
+var x=document.forms["mForm"]["uname"].value
+var atplace=x.indexOf("@");
+var dotplace=x.lastIndexOf(".");
+if (atplace<1||dotplace<atplace+2||dotplace+2>=x.length){
+alert("NOT A VALID FORMAT")
+return false;
+}
+}
+</script>
+
+
+
+<meta charset="ISO-8859-1">
+<title>login</title>
+<style>
+body {
+    background-color: #092756;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+	height: 150px;
+ 	 width: 250px;
+  	border: 1px dashed #ccc;
+  	padding: 1em;
+}
+
+
+    tab { padding-left: 2em; }
+    .test{
+    height:30px;
+    width:100px;
+}
+</style>
+</head>
+
+<body>
+<h1><form name="mForm">
+
+<h2>Enter ur details</h2>
+<input type="email" name="uname" placeholder="email_id" style="width: 300px; height: 30px; " required><br>
+<input type="password" name="pwd" placeholder="password" style="width: 300px; height: 30px;" required><br>
+<button class="test"><a href="file:///C:/Users/Asus/workspace/Lab_2/WebContent/WEB-INF/home1.html">login</a></button><tab></tab>
+<button class="test"><a href="file:///C:/Users/Asus/Desktop/New%20folder/register.html">register</a></button>
+</form></h1>
+</body>
+</html>
