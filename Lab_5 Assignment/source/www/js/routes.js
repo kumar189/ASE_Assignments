@@ -16,10 +16,10 @@ angular.module('app.routes', [])
     controller: 'loginCtrl'
   })
 
-  .state('home', {
+  .state('general_API', {
     url: '/page4',
-    templateUrl: 'templates/home.html',
-    controller: 'homeCtrl'
+    templateUrl: 'templates/general_API.html',
+    controller: 'general_APICtrl'
   })
 
   .state('signup', {
@@ -32,6 +32,18 @@ angular.module('app.routes', [])
     url: '/page6',
     templateUrl: 'templates/user_created_success.html',
     controller: 'user_created_successCtrl'
+  })
+
+  .state('web_Service', {
+    url: '/page7',
+    templateUrl: 'templates/web_Service.html',
+    controller: 'web_ServiceCtrl'
+  })
+
+  .state('home', {
+    url: '/page8',
+    templateUrl: 'templates/home.html',
+    controller: 'homeCtrl'
   })
 
 $urlRouterProvider.otherwise('/page2')
