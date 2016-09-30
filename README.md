@@ -10,3 +10,7 @@ https://github.com/maninandan/practice/wiki/Lab_3-Assignment
 
 Lab_4 Assignment Wiki Link
 https://github.com/maninandan/practice/wiki/Lab_Assign_4
+
+
+Lab_5 Assignment wiki link
+https://github.com/maninandan/practice/wiki/Lab_assign_5
