@@ -14,3 +14,6 @@ https://github.com/maninandan/practice/wiki/Lab_Assign_4
 
 Lab_5 Assignment wiki link
 https://github.com/maninandan/practice/wiki/Lab_assign_5
+
+Lab_6 Assignment wiki link
+https://github.com/maninandan/practice/wiki/Lab_assign_6
