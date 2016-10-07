@@ -1,4 +1,4 @@
-
+package com.sourcey.harsha;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import android.widget.Toast;
 import butterknife.ButterKnife;
 import butterknife.Bind;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
 

@@ -10,31 +10,29 @@
         android:layout_height="wrap_content"
         android:paddingTop="56dp"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp"
-        android:weightSum="1">
+        android:paddingRight="24dp">
 
-
+        <!--  Email Label -->
         <android.support.design.widget.TextInputLayout
-            android:layout_width="178dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:weightSum="1">
+            android:layout_marginBottom="8dp">
             <EditText android:id="@+id/input_email"
-                android:layout_width="170dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="Email"
-                android:layout_weight="0.10" />
+                android:hint="Email" />
         </android.support.design.widget.TextInputLayout>
 
+        <!--  Password Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp">
             <EditText android:id="@+id/input_password"
-                android:layout_width="170dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:hint="Password"/>
@@ -42,7 +40,7 @@
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_login"
-            android:layout_width="220dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
@@ -50,10 +48,10 @@
             android:text="Login"/>
 
         <TextView android:id="@+id/link_signup"
-            android:layout_width="221dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="Sign up here"
+            android:text="No account yet? Create one"
             android:gravity="center"
             android:textSize="16dip"/>
 
