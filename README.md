@@ -20,3 +20,7 @@ https://github.com/maninandan/practice/wiki/Lab_assign_6
 
 Lab_7 Assignment wiki link
 https://github.com/maninandan/practice/wiki/Lab_assign_7
+
+
+Lab_8 Assignment wiki link
+https://github.com/maninandan/practice/wiki/Lab_assign_8
