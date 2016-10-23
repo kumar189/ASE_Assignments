@@ -4,7 +4,6 @@ public class Calculate {
 		System.out.println("Adding values: " + var1 );
 		return var1*60*60 ;
 	}
-
 	
 
 }

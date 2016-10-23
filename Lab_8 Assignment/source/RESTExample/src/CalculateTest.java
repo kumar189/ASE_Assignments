@@ -6,7 +6,8 @@ public class CalculateTest {
 
 	Calculate calculation = new Calculate();
 	int sum = calculation.sum(18);
-	int testSum = 7;
+	int testSum = 64800;
+
 
 	@Test
 	public void testSum() {
